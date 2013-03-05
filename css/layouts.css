@@ -1,0 +1,26 @@
+/*Absolute and relative positioning*/
+
+#id01 {
+    position: absolute;
+    top:25px;
+    left:50px;
+    z-index: 0;
+    background-color: #bc8f8f;
+    width: 200px;
+    height: 200px;
+}
+
+#id02 {
+    position: relative;
+    top: 25px;
+    left:50px;
+    z-index: 1;
+    background-color: #8a2be2;
+    width: 100px;
+    height: 100px;
+}
+
+.vanish {
+    display:none;
+}
+

@@ -1,0 +1,72 @@
+/* Type selector */
+    /*div { color: red;}*/
+
+/* class selector */
+    /* .fancy { color: red; } */
+
+/* id selctor */
+    /*#div1 { color:aqua;}*/
+
+/* Attribute selector*/
+
+    *[data-authorbla] { color:green;}
+    *[data-author=balala] { color:orange;}
+    /*endswith*/
+    *[data-author$=blabla] { color:#adff2f;}
+
+    /*beginswith*/
+    *[data-author^=blaba] { color:aqua;}
+
+    /*contains*/
+    *[data-author*=blabla] { color:#4682b4;}
+
+ /* chaining */
+ table, ul {color: red;}
+
+ /*Pseudo selectors*/
+p::first-letter { color:red; font-size: 24px;}
+
+/*Pseudo class*/
+p:hover { color:#8a2be2;}
+
+/* Combinators THERE IS A CHARACTER THERE!!!!! SPAEC FIRST CLASS CITIZEN LOLOLOLOL*/
+/* #div1 div { color: red;} */
+/* #div1 p { color:#ff1493;} */
+
+/* > immediate child */
+#div1 > div { color: orange;}
+
+/* ~ = siblings */
+ul ~ table { color: aqua;}
+
+/* pseudo class  1, 1n, odd, even*/
+li:nth-child(1) { color: #b8860b;}
+
+/* colors */
+
+/* p { color: rgb(10, 10, 255);} */
+/* p { color: rgba(10, 10, 255, 100);} */
+
+/* opacity */
+#opacity {opacity:.50;}
+
+/* text transforms */
+#textshadow { text-shadow: 2px 2px 2px red,0 0 10px blue; font-size: 24pt;}
+
+/*text style*/
+#fontstyle { font-weight: 900; font-size: 24px; line-height: 48px; }
+
+/*fontface*/
+/* pls put fontfaec here*/
+
+
+/* columns */
+/* pls put columns here*/
+
+/* box properties*/
+#lorem { margin:20px; border:2px solid green; width:400px; box-sizing: border-box;}
+#opacity{ padding:20px; border-left:2px solid red; padding-left:20px; margin-left:3px;}
+
+
+/* visibility */
+/*display, visibility, white-space, overflow*/

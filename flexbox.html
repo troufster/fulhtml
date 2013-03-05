@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+
+        .flex
+        {
+            /* basic styling */
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            font: 14px Arial;
+
+            /* flexbox setup */
+            display: -webkit-flex;
+            -webkit-flex-direction: row;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex > div
+        {
+            -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+
+            width: 30px; /* To make the transition work nicely.  (Transitions to/from
+                      "width:auto" are buggy in Gecko and Webkit, at least.
+                      See http://bugzil.la/731886 for more info.) */
+
+            -webkit-transition: width 0.7s ease-out;
+            transition: width 0.7s ease-out;
+        }
+
+            /* colors */
+        .flex > div:nth-child(1){ background : #009246; }
+        .flex > div:nth-child(2){ background : #F1F2F1; }
+        .flex > div:nth-child(3){ background : #CE2B37; }
+
+        .flex > div:hover
+        {
+            width: 200px;
+        }
+
+        .flexbox #flex2 {
+            display: flex;
+            display: -webkit-flex;
+
+           width:100%;
+            border:1px solid gray;
+            height:200px;
+
+
+
+        }
+
+        .flesk {
+            flex:1;
+            -webkit-flex:1;
+
+            background-color: green;
+            border: 1px solid black;
+        }
+
+        .doubleflesk {
+
+            -webkit-flex:2;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<p>Flexbox nuovo</p>
+<div class="flex">
+    <div>uno</div>
+    <div>due</div>
+    <div>tre</div>
+</div>
+<div class="flexbox">
+    <div id="flex2">
+        <div class="flesk">Somsing</div>
+        <div class="flesk doubleflesk">Whatever</div>
+        <div class="flesk">Bice</div>
+        <div class="flesk">Raddi</div>
+        <div class="flesk">Rajjan</div>
+        <div class="flesk">Derp</div>
+    </div>
+</div>
+</body>
+</html>
