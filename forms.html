@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        :invalid {
+            border: 2px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <input type="text" id="part" name="part" required pattern="[A-Z]{3}[0-9]{4}"
+           title="Part numbers consist of 3 uppercase letters followed by 4 digits."/>
+
+    <input type="number" id="numb" name="numb" value="6" min="1" max="30" required>
+
+    <input type="url" required="required" placeholder="http://www.microsoft.com">
+
+    <input type="email" required="required" placeholder="bill.gates@microsoft.com">
+
+    <!-- Doesn't validate -->
+    <input type="submit" formnovalidate value="Save">
+
+    <!-- Does validate :)-->
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
